@@ -7,8 +7,11 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Cloud from "./pages/Cloud";
-import Web from "./pages/Web";
-import Design from "./pages/Design";
+import AIServices from "./pages/AIServices";
+import Careers from "./pages/Carriers";
+import ContactPage from "./pages/ContactPage";
+import Insights from "./pages/insights";
+import DataServices from "./pages/DataServices";
 
 function App() {
   return (
@@ -20,13 +23,16 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/contactpage" element={<ContactPage />} />
         <Route path="/cloud" element={<Cloud />} />
-        <Route path="/web" element={<Web />} />
-        <Route path="/design" element={<Design />} />
+        <Route path="/aiservices" element={<AIServices />} />
+        <Route path="/dataservices" element={<DataServices />} />
+        <Route path="/insights" element={<Insights />} />
+        <Route path="/careers" element={<Careers />} />
       </Routes>
       <Footer />
     </Router>
   );
 }
 
-export default App;
+export default App;

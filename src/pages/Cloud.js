@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom"; 
 
-const cloud = [
+const cloudServices = [
   {
     title: "Cloud Consulting",
     description: "Expert guidance for cloud strategy, migration, and optimization.",
@@ -33,10 +33,25 @@ const cloud = [
     description: "Harness AI and big data analytics with scalable cloud solutions.",
     icon: "📊",
   },
+  {
+    title: "Serverless Computing",
+    description: "Deploy applications faster with serverless architectures.",
+    icon: "☁️",
+  },
+  {
+    title: "Multi-Cloud Strategy",
+    description: "Seamlessly integrate and manage multi-cloud environments.",
+    icon: "🔗",
+  },
+  {
+    title: "Edge Computing",
+    description: "Process data closer to the source with edge computing solutions.",
+    icon: "🌍",
+  },
 ];
 
-const Cloud = () => {
-  const navigate = useNavigate(); // Hook for navigation
+const CloudServices = () => {
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900">
@@ -58,15 +73,15 @@ const Cloud = () => {
       {/* Services Section */}
       <section className="container mx-auto px-6 py-12">
         <h2 className="text-3xl font-semibold text-center mb-8">Our Cloud Solutions</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {cloud.map((service, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+          {cloudServices.map((service, index) => (
             <motion.div
               key={index}
               className="bg-white p-6 rounded-lg shadow-lg text-center"
               whileHover={{ scale: 1.05 }}
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <div className="text-4xl">{service.icon}</div>
               <h3 className="text-xl font-semibold mt-4">{service.title}</h3>
@@ -79,4 +94,4 @@ const Cloud = () => {
   );
 };
 
-export default Cloud;
+export default CloudServices;

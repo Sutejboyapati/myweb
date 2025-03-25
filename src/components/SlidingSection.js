@@ -6,17 +6,17 @@ import 'slick-carousel/slick/slick-theme.css';
 const testimonials = [
   {
     name: 'Jane Doe',
-    title: 'CEO, Company A',
+    title: 'CEO',
     content: 'This product has significantly improved our workflow and productivity.',
   },
   {
     name: 'John Smith',
-    title: 'CTO, Company B',
+    title: 'CTO',
     content: 'An essential tool for our daily operations. Highly recommended!',
   },
   {
     name: 'Emily Johnson',
-    title: 'Marketing Director, Company C',
+    title: 'Marketing Director',
     content: 'A game-changer in the industry. Exceptional quality and support.',
   },
 ];
